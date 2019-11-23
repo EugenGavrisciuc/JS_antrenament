@@ -1,0 +1,59 @@
+"use strict";
+var a1 = [], a2, k, xx, neaha;
+var floor = function () {
+
+    alternative();
+    function alternative(){
+       k = prompt("Elements");
+       if (k == null || k == '')
+       {
+         alert("Insert a value.");
+         alternative();
+       };
+
+    };
+    var flow = k.split(", ");
+
+    console.log(flow);
+
+    alternative2();
+    function alternative2(){
+        neaha = prompt("New elements");
+        if (neaha == null || k == '')
+        {
+          alert("Insert a value");
+          alternative2();
+        };
+    };
+    var ll = neaha.split(", ")
+   
+    console.log(ll);
+    flow.push(ll);
+    xx = flow.flat();
+    // console.log(xx);
+    // console.log(xx.length);
+    // xx.forEach(afaf);
+    xx.every(afaf);
+    console.log(xx);
+    // var jaj = xx.filter(big);
+    // console.log(jaj);
+};
+
+floor();
+
+function afaf(element, index, xx) {
+  if(isNaN(element))
+  {
+    alert(xx);
+  }else{
+    alert("Please, insert only words.");
+    xx = [];
+    floor();
+  }
+};
+
+// function big (element){
+//   if(element > 10){
+//     return element;
+//   };
+// };

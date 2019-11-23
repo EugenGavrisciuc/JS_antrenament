@@ -1,0 +1,39 @@
+Best:
+var names = ["Bob", "Flower", "lah", "Alah", "lala."];
+function check(array) {
+    for (let i=0; i < array.length; i++) {
+         if (array[i].includes(".")) {
+                return "yes";
+          }
+    }
+}
+console.log(check(names));
+
+I tried:
+
+"use strict";
+
+var array = ["Bob", "Flower", "lah", "Alah", "lala"];
+
+function select(element, index, array){
+  if(element.indexOf("/"))
+  {
+    console.log("wow");
+  }
+
+}
+
+array.every(select);
+
+Or:
+
+"use strict";
+
+var array = ["Bob", "Flower", "lah", "Alah", "lala"];
+var i;
+for (i=0; i<array.length; i++) {
+  if (array[i].includes("")) {
+    console.log("yes");
+
+  }
+}
